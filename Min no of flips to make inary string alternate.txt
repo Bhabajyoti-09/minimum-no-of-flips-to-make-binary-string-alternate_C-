@@ -1,0 +1,10 @@
+
+int minFlips (string S)
+{
+    int c1 = 0, c2 = 0;
+    for (int i = 0; i < S.size(); i++) {
+        if (i % 2 != S[i] - '0') c1++;
+        else                     c2++;
+    }
+    return min(c1, c2);
+}
